@@ -1,0 +1,61 @@
+ .carousel-control-prev.white {
+    position: top;
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 100px;
+    border-color: var(--grey);
+    color: var(--white);
+    opacity: 1;
+}
+
+.carousel-control-prev.white::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    left: 14.5px;
+    top: 13.5px;
+}
+
+.carousel-control-next.white {
+    position: top;
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 60px;
+    border: 2px solid;
+    border-radius: 100px;
+    border-color: var(--grey);
+    color: var(--white);
+    float: right;
+    opacity: 1;
+}
+
+.carousel-control-next.white::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    left: 11.5px;
+    top: 13.5px;
+} 
+
+.carousel-control-prev.white:hover,
+.carousel-control-next.white:hover {
+    color: var(--dark-red);
+}
